@@ -11,11 +11,11 @@ body{font-family:Arial,sans-serif;background:#f6f2ed;color:#222;line-height:1.6}
 nav{background:#111;color:white;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
 nav img{width:90px;background:white;border-radius:10px;padding:6px}
 nav a{color:white;text-decoration:none;margin-left:18px;font-weight:bold}
-header{min-height:85vh;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px}
+header{min-height:85vh;background:linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.68)),url('https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px}
 header h1{font-size:56px;margin-bottom:15px}
 header p{font-size:22px;max-width:850px}
 .btn{display:inline-block;margin-top:25px;background:#8b0000;color:white;padding:15px 30px;border-radius:40px;text-decoration:none;font-weight:bold}
-.section{max-width:1200px;margin:auto;padding:70px 20px}
+.section{max-width:1250px;margin:auto;padding:70px 20px}
 h2{text-align:center;color:#8b0000;font-size:38px;margin-bottom:35px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
 .card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.1)}
@@ -23,6 +23,7 @@ h2{text-align:center;color:#8b0000;font-size:38px;margin-bottom:35px}
 .card div{padding:25px}
 .card h3{color:#8b0000;margin-bottom:10px}
 .box{background:white;padding:40px;border-radius:20px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.badge{display:inline-block;background:#8b0000;color:white;padding:8px 14px;border-radius:20px;font-size:13px;margin-top:10px}
 .contact{background:#111;color:white;text-align:center;padding:70px 20px}
 .contact h2{color:white}
 .whatsapp{background:#25D366;color:white;padding:16px 32px;border-radius:40px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:20px}
@@ -43,7 +44,7 @@ nav a{display:inline-block;margin-top:10px}
   <div>
     <a href="#about">Über uns</a>
     <a href="#products">Produkte</a>
-    <a href="#petfood">Tiernahrung</a>
+    <a href="#petfood">Pet Food</a>
     <a href="#contact">Kontakt</a>
     <a href="#impressum">Impressum</a>
   </div>
@@ -54,7 +55,7 @@ nav a{display:inline-block;margin-top:10px}
     <h1>Fine Meat GmbH</h1>
     <p>Internationaler Fleischgroßhandel | International Meat Wholesale</p>
     <p>Certified meat products exclusively sourced from Europe</p>
-    <a class="btn" href="#contact">Kontakt aufnehmen</a>
+    <a class="btn" href="#contact">Anfrage senden | Send Inquiry</a>
   </div>
 </header>
 
@@ -63,27 +64,38 @@ nav a{display:inline-block;margin-top:10px}
     <h2>Über uns | About us</h2>
     <p>
       Die Fine Meat GmbH ist im internationalen Fleischgroßhandel tätig und beliefert Geschäftskunden,
-      Großhändler und Industriepartner mit hochwertigen Fleischprodukten.
+      Großhändler, Industriepartner und Verarbeitungsbetriebe mit hochwertigen Fleischprodukten.
     </p>
     <br>
     <p>
       Fine Meat GmbH operates in international meat wholesale and supplies business customers,
-      wholesalers and industrial partners with high-quality meat products.
+      wholesalers, industrial partners and processors with high-quality meat products.
     </p>
   </div>
 </section>
 
 <section class="section" id="products">
-  <h2>Unsere Produkte | Our Products</h2>
+  <h2>Produkte in Lebensmittelqualität | Food Grade Products</h2>
 
   <div class="grid">
 
     <div class="card">
       <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80">
       <div>
-        <h3>Rind | Beef</h3>
-        <p>Rindfleisch, Fett, Abschnitte und weitere Produkte auf Anfrage.</p>
-        <p>Beef, fat, trimmings and further products upon request.</p>
+        <h3>Rinderkopffleisch | Beef Head Meat</h3>
+        <p>60/40, 70/30 mit Drüsen, 80/20 und 95/05 auf Anfrage.</p>
+        <p>Available in different specifications upon request.</p>
+        <span class="badge">Lebensmittelqualität</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?auto=format&fit=crop&w=1200&q=80">
+      <div>
+        <h3>Rinderabschnitte | Beef Trimmings</h3>
+        <p>Rinderabschnitte, Rinderfett und Rinderfett in Blöcken.</p>
+        <p>Beef trimmings, beef fat and beef fat in blocks.</p>
+        <span class="badge">Beef</span>
       </div>
     </div>
 
@@ -91,8 +103,9 @@ nav a{display:inline-block;margin-top:10px}
       <img src="https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&w=1200&q=80">
       <div>
         <h3>Kalb | Veal</h3>
-        <p>Kalbsprodukte für Großhandel und Verarbeitung.</p>
-        <p>Veal products for wholesale and processing.</p>
+        <p>Kalbsabschnitte, Kalbslappen, Kalbsfett und Kalbsbrust mit Lappen.</p>
+        <p>Veal trimmings, veal flaps, veal fat and veal breast with flaps.</p>
+        <span class="badge">Veal</span>
       </div>
     </div>
 
@@ -100,8 +113,49 @@ nav a{display:inline-block;margin-top:10px}
       <img src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=1200&q=80">
       <div>
         <h3>Geflügel | Poultry</h3>
-        <p>Puten- und Geflügelprodukte in verschiedenen Spezifikationen.</p>
-        <p>Turkey and poultry products in different specifications.</p>
+        <p>Hähnchenschenkel, Hähnchenabschnitte, Badar und weitere Geflügelprodukte.</p>
+        <p>Chicken legs, chicken trimmings, Badar and further poultry products.</p>
+        <span class="badge">Poultry</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=1200&q=80">
+      <div>
+        <h3>Pute | Turkey</h3>
+        <p>Putenoberkeule, Putenflügel, Putenabschnitte und Putenhaut.</p>
+        <p>Turkey upper thigh, turkey wings, turkey trimmings and turkey skin.</p>
+        <span class="badge">Turkey</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1200&q=80">
+      <div>
+        <h3>Truthahn MDM | Turkey MDM</h3>
+        <p>Gefrorenes Truthahn-MDM, nackte Blöcke.</p>
+        <p>Frozen turkey MDM, naked blocks.</p>
+        <span class="badge">Frozen Blocks</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1200&q=80">
+      <div>
+        <h3>Jungbulle | Young Bull</h3>
+        <p>Jungbullenabschnitte, Jungbullenlappen, Brust mit Lappen und Fett.</p>
+        <p>Young bull trimmings, flaps, breast with flaps and fat.</p>
+        <span class="badge">Young Bull</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?auto=format&fit=crop&w=1200&q=80">
+      <div>
+        <h3>Innereien | Offal</h3>
+        <p>Truthahnleber, Truthahnherzen in nackten Blöcken oder Polyblöcken.</p>
+        <p>Turkey liver and turkey hearts in naked blocks or polyblocks.</p>
+        <span class="badge">On Request</span>
       </div>
     </div>
 
@@ -156,28 +210,24 @@ nav a{display:inline-block;margin-top:10px}
 </section>
 
 <section class="section">
+  <h2>Produktliste | Product List</h2>
+  <div class="box" style="text-align:center">
+    <p>
+      Aktuelle Preise, Verfügbarkeiten und Lieferkonditionen erhalten Sie gerne auf Anfrage.
+    </p>
+    <p>
+      Current prices, availability and delivery conditions are available upon request.
+    </p>
+    <a class="btn" href="./produktliste.pdf" target="_blank">Produktliste herunterladen</a>
+  </div>
+</section>
+
+<section class="section">
   <h2>Warum Fine Meat? | Why Fine Meat?</h2>
   <div class="grid">
-    <div class="card">
-      <div>
-        <h3>Europäische Ware</h3>
-        <p>Certified meat products exclusively sourced from Europe.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div>
-        <h3>B2B Großhandel</h3>
-        <p>Reliable supply for wholesalers, processors and business customers.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div>
-        <h3>Langfristige Zusammenarbeit</h3>
-        <p>Long-term cooperation with professional partners.</p>
-      </div>
-    </div>
+    <div class="card"><div><h3>Europäische Ware</h3><p>Certified meat products exclusively sourced from Europe.</p></div></div>
+    <div class="card"><div><h3>B2B Großhandel</h3><p>Reliable supply for wholesalers, processors and business customers.</p></div></div>
+    <div class="card"><div><h3>Flexible Lieferung</h3><p>EXW or individual delivery arrangements depending on customer requirements.</p></div></div>
   </div>
 </section>
 
@@ -193,30 +243,24 @@ nav a{display:inline-block;margin-top:10px}
 <section class="section legal" id="impressum">
   <div class="box">
     <h2>Impressum</h2>
-
     <p><strong>Fine Meat GmbH</strong></p>
     <p>Friese Str. 21</p>
     <p>02681 Schirgiswalde-Kirschau</p>
     <br>
-
     <p><strong>Vertreten durch:</strong></p>
     <p>Geschäftsführer: Erkan Karapolat</p>
     <br>
-
     <p><strong>Kontakt:</strong></p>
     <p>Telefon: 0176 30529426</p>
     <p>E-Mail: info@finemeat.de</p>
     <br>
-
     <p><strong>Registereintrag:</strong></p>
     <p>Handelsregister: HRB 46543</p>
     <p>Registergericht: Amtsgericht Dresden</p>
     <br>
-
     <p><strong>Umsatzsteuer-ID:</strong></p>
     <p>USt-IdNr.: DE456413165</p>
     <br>
-
     <h2>Datenschutzhinweis | Privacy Notice</h2>
     <p>
       Diese Website dient der Unternehmensdarstellung und Kontaktaufnahme.

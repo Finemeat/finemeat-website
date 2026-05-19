@@ -3,281 +3,164 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Fine Meat GmbH</title>
+<title>Fine Meat GmbH | International Meat Wholesale</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial,sans-serif;
-background:#f4f4f4;
-color:#222;
-line-height:1.6;
-}
-
-header{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
-url('https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?q=80&w=1600');
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-color:white;
-}
-
-header img{
-width:220px;
-background:white;
-padding:15px;
-border-radius:15px;
-margin-bottom:25px;
-}
-
-header h1{
-font-size:55px;
-margin-bottom:15px;
-}
-
-header p{
-font-size:22px;
-max-width:700px;
-}
-
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:15px 30px;
-background:#8b0000;
-color:white;
-text-decoration:none;
-border-radius:40px;
-font-weight:bold;
-transition:0.3s;
-}
-
-.btn:hover{
-background:#b30000;
-}
-
-.section{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-.section h2{
-text-align:center;
-margin-bottom:50px;
-font-size:40px;
-color:#8b0000;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.card{
-background:white;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.card-content{
-padding:25px;
-}
-
-.card-content h3{
-margin-bottom:15px;
-color:#8b0000;
-}
-
-.about{
-background:white;
-border-radius:20px;
-padding:50px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-}
-
-.contact{
-background:#111;
-color:white;
-text-align:center;
-padding:70px 20px;
-}
-
-.contact h2{
-margin-bottom:25px;
-font-size:40px;
-}
-
-.contact p{
-margin:10px 0;
-font-size:18px;
-}
-
-.whatsapp{
-display:inline-block;
-margin-top:25px;
-padding:16px 32px;
-background:#25D366;
-color:white;
-text-decoration:none;
-font-size:18px;
-font-weight:bold;
-border-radius:40px;
-}
-
-footer{
-background:black;
-color:#aaa;
-text-align:center;
-padding:20px;
-font-size:14px;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f6f2ed;color:#222;line-height:1.6}
+nav{background:#111;color:white;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+nav img{width:90px;background:white;border-radius:10px;padding:6px}
+nav a{color:white;text-decoration:none;margin-left:18px;font-weight:bold}
+header{min-height:85vh;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px}
+header h1{font-size:56px;margin-bottom:15px}
+header p{font-size:22px;max-width:800px}
+.btn{display:inline-block;margin-top:25px;background:#8b0000;color:white;padding:15px 30px;border-radius:40px;text-decoration:none;font-weight:bold}
+.section{max-width:1200px;margin:auto;padding:70px 20px}
+h2{text-align:center;color:#8b0000;font-size:38px;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.1)}
+.card img{width:100%;height:220px;object-fit:cover}
+.card div{padding:25px}
+.card h3{color:#8b0000;margin-bottom:10px}
+.box{background:white;padding:40px;border-radius:20px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.contact{background:#111;color:white;text-align:center;padding:70px 20px}
+.contact h2{color:white}
+.whatsapp{background:#25D366;color:white;padding:16px 32px;border-radius:40px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:20px}
+footer{background:#000;color:#bbb;text-align:center;padding:25px;font-size:14px}
+.legal{font-size:14px;color:#444}
+@media(max-width:700px){header h1{font-size:38px}nav{flex-direction:column}nav a{display:inline-block;margin-top:10px}}
 </style>
 </head>
 
 <body>
 
+<nav>
+  <img src="./logo.jpeg.jpeg" alt="Fine Meat Logo">
+  <div>
+    <a href="#about">Über uns</a>
+    <a href="#products">Produkte</a>
+    <a href="#contact">Kontakt</a>
+    <a href="#impressum">Impressum</a>
+  </div>
+</nav>
+
 <header>
-
-<img src="./logo.jpeg.jpeg">
-
-<h1>Fine Meat GmbH</h1>
-
-<p>
-Internationaler Fleischgroßhandel<br>
-International Meat Wholesale
-</p>
-
-<a class="btn" href="https://wa.me/4917630529426">
-WhatsApp Kontakt
-</a>
-
+  <div>
+    <h1>Fine Meat GmbH</h1>
+    <p>Internationaler Fleischgroßhandel | International Meat Wholesale</p>
+    <p>Certified meat products exclusively sourced from Europe</p>
+    <a class="btn" href="#contact">Kontakt aufnehmen</a>
+  </div>
 </header>
 
-<section class="section">
+<section class="section" id="about">
+  <div class="box">
+    <h2>Über uns | About us</h2>
+    <p>
+      Die Fine Meat GmbH ist im internationalen Fleischgroßhandel tätig und beliefert Geschäftskunden,
+      Großhändler und Industriepartner mit hochwertigen Fleischprodukten.
+    </p>
+    <br>
+    <p>
+      Fine Meat GmbH operates in international meat wholesale and supplies business customers,
+      wholesalers and industrial partners with high-quality meat products.
+    </p>
+  </div>
+</section>
 
-<div class="about">
+<section class="section" id="products">
+  <h2>Unsere Produkte | Our Products</h2>
 
-<h2>Über uns | About us</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80">
+      <div>
+        <h3>Rind | Beef</h3>
+        <p>Rindfleisch, Fett, Abschnitte und weitere Produkte auf Anfrage.</p>
+        <p>Beef, fat, trimmings and further products upon request.</p>
+      </div>
+    </div>
 
-<p>
-Die Fine Meat GmbH ist auf den internationalen Handel mit hochwertigen Fleischprodukten spezialisiert.
-Wir beliefern Großhändler, Industrieunternehmen und Geschäftskunden europaweit.
-</p>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&w=1200&q=80">
+      <div>
+        <h3>Kalb | Veal</h3>
+        <p>Kalbsprodukte für Großhandel und Verarbeitung.</p>
+        <p>Veal products for wholesale and processing.</p>
+      </div>
+    </div>
 
-<br>
-
-<p>
-Fine Meat GmbH specializes in the international trade of high-quality meat products.
-We supply wholesalers, industrial companies and business customers throughout Europe.
-</p>
-
-</div>
-
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=1200&q=80">
+      <div>
+        <h3>Geflügel | Poultry</h3>
+        <p>Puten- und Geflügelprodukte in verschiedenen Spezifikationen.</p>
+        <p>Turkey and poultry products in different specifications.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="section">
-
-<h2>Unsere Produkte | Our Products</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200">
-
-<div class="card-content">
-
-<h3>Rindfleisch | Beef</h3>
-
-<p>
-Hochwertige Rindfleischprodukte für Industrie und Großhandel.
-</p>
-
-</div>
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1603048719539-9ecb4f2df5e2?q=80&w=1200">
-
-<div class="card-content">
-
-<h3>Kalbfleisch | Veal</h3>
-
-<p>
-Kalbfleisch und Kalbsfett in verschiedenen Spezifikationen.
-</p>
-
-</div>
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&w=1200&q=80">
-
-<div class="card-content">
-
-<h3>Geflügel | Poultry</h3>
-
-<p>
-Puten- und Geflügelprodukte für B2B Kunden.
-</p>
-
-</div>
-</div>
-
-</div>
-
+  <h2>Warum Fine Meat? | Why Fine Meat?</h2>
+  <div class="grid">
+    <div class="card"><div><h3>Europäische Ware</h3><p>Certified meat products exclusively sourced from Europe.</p></div></div>
+    <div class="card"><div><h3>B2B Großhandel</h3><p>Reliable supply for wholesalers, processors and business customers.</p></div></div>
+    <div class="card"><div><h3>Langfristige Zusammenarbeit</h3><p>Long-term cooperation with professional partners.</p></div></div>
+  </div>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
+  <h2>Kontakt | Contact</h2>
+  <p><strong>Fine Meat GmbH</strong></p>
+  <p>Friese Str. 21, 02681 Schirgiswalde-Kirschau</p>
+  <p>Telefon: 0176 30529426</p>
+  <p>E-Mail: info@finemeat.de</p>
+  <a class="whatsapp" href="https://wa.me/4917630529426">WhatsApp Kontakt</a>
+</section>
 
-<h2>Kontakt | Contact</h2>
+<section class="section legal" id="impressum">
+  <div class="box">
+    <h2>Impressum</h2>
 
-<p>Fine Meat GmbH</p>
-<p>Friese Str. 21</p>
-<p>02681 Schirgiswalde-Kirschau</p>
-<p>📞 0176 30529426</p>
-<p>✉️ info@finemeat.de</p>
+    <p><strong>Fine Meat GmbH</strong></p>
+    <p>Friese Str. 21</p>
+    <p>02681 Schirgiswalde-Kirschau</p>
+    <br>
 
-<a class="whatsapp" href="https://wa.me/4917630529426">
-Jetzt kontaktieren
-</a>
+    <p><strong>Vertreten durch:</strong></p>
+    <p>Geschäftsführer: Erkan Karapolat</p>
+    <br>
 
+    <p><strong>Kontakt:</strong></p>
+    <p>Telefon: 0176 30529426</p>
+    <p>E-Mail: info@finemeat.de</p>
+    <br>
+
+    <p><strong>Registereintrag:</strong></p>
+    <p>Handelsregister: HRB 46543</p>
+    <p>Registergericht: Amtsgericht Dresden</p>
+    <br>
+
+    <p><strong>Umsatzsteuer-ID:</strong></p>
+    <p>USt-IdNr.: DE456413165</p>
+    <br>
+
+    <h2>Privacy Notice | Datenschutzhinweis</h2>
+    <p>
+      Diese Website dient der Unternehmensdarstellung und Kontaktaufnahme.
+      Wenn Sie uns per E-Mail, Telefon oder WhatsApp kontaktieren, werden Ihre Angaben ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.
+    </p>
+    <br>
+    <p>
+      This website is used for company presentation and contact purposes.
+      If you contact us by e-mail, phone or WhatsApp, your information will only be used to process your request.
+    </p>
+  </div>
 </section>
 
 <footer>
-© 2026 Fine Meat GmbH | All Rights Reserved
+  © 2026 Fine Meat GmbH | HRB 46543 | Amtsgericht Dresden | USt-IdNr. DE456413165
 </footer>
 
 </body>

@@ -4,21 +4,174 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fine Meat GmbH</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f3ee;
+      color: #222;
+    }
+
+    header {
+      background: #1f1f1f;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      width: 180px;
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .hero {
+      padding: 50px 20px;
+      text-align: center;
+      background: #7b1e1e;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: #7b1e1e;
+    }
+
+    .contact {
+      background: #1f1f1f;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 24px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #ccc;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
-<body style="font-family:Arial; text-align:center; background:#f5f5f5; padding:50px;">
-<img src="./logo.jpeg.jpeg" width="250">
+<body>
+
+<header>
+  <img src="./logo.jpeg.jpeg" alt="Fine Meat Logo">
   <h1>Fine Meat GmbH</h1>
+  <p>Internationaler Fleischgroßhandel | International Meat Wholesale</p>
+</header>
 
-  <h3>Internationaler Fleischgroßhandel</h3>
+<section class="hero">
+  <h1>Qualitätsfleisch für Großhandel & Industrie</h1>
+  <p>Certified meat products exclusively sourced from Europe</p>
+</section>
 
+<section class="section">
+  <h2>Über uns | About us</h2>
   <p>
-    Hochwertige Fleischprodukte für Industrie und Großhandel
+    Die Fine Meat GmbH ist im internationalen Fleischgroßhandel tätig.
+    Wir beliefern Geschäftskunden, Industriepartner und Großhändler mit hochwertigen Fleischprodukten.
   </p>
+  <p>
+    Fine Meat GmbH is active in international meat wholesale.
+    We supply business customers, industrial partners and wholesalers with high-quality meat products.
+  </p>
+</section>
 
-  <p>📞 017630529426</p>
+<section class="section">
+  <h2>Unsere Produkte | Our Products</h2>
 
-  <p>✉️ info@finemeat.de</p>
+  <div class="cards">
+    <div class="card">
+      <h3>Rind | Beef</h3>
+      <p>Rindfleisch, Fett, Abschnitte und weitere Produkte auf Anfrage.</p>
+      <p>Beef, fat, trimmings and further products upon request.</p>
+    </div>
+
+    <div class="card">
+      <h3>Kalb | Veal</h3>
+      <p>Kalbsprodukte für Großhandel und Verarbeitung.</p>
+      <p>Veal products for wholesale and processing.</p>
+    </div>
+
+    <div class="card">
+      <h3>Geflügel | Poultry</h3>
+      <p>Puten- und Geflügelprodukte in verschiedenen Spezifikationen.</p>
+      <p>Turkey and poultry products in different specifications.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Warum Fine Meat? | Why Fine Meat?</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>EU-zertifizierte Ware</h3>
+      <p>Certified meat products from Europe.</p>
+    </div>
+    <div class="card">
+      <h3>B2B Großhandel</h3>
+      <p>Reliable supply for wholesalers and industrial customers.</p>
+    </div>
+    <div class="card">
+      <h3>Flexible Lieferung</h3>
+      <p>Delivery or self-pickup depending on customer requirements.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Kontakt | Contact</h2>
+  <p>Fine Meat GmbH</p>
+  <p>Friese Str. 21, 02681 Schirgiswalde-Kirschau</p>
+  <p>Telefon: 0176 30529426</p>
+  <p>E-Mail: info@finemeat.de</p>
+
+  <a class="button" href="https://wa.me/4917630529426">
+    WhatsApp Kontakt
+  </a>
+</section>
+
+<footer>
+  © 2026 Fine Meat GmbH – All rights reserved.
+</footer>
 
 </body>
 </html>

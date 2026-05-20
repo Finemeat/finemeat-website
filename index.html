@@ -1,26 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fine Meat GmbH | International Meat Wholesale</title>
-
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Arial,sans-serif;background:#f4f1ec;color:#222;line-height:1.6}
-nav{background:#0b0b0b;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-nav img{width:130px;background:white;padding:8px;border-radius:12px}
+nav{background:#111;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+nav img{width:120px;background:white;padding:8px;border-radius:12px}
 nav a{color:white;text-decoration:none;margin-left:18px;font-weight:bold}
-header{min-height:90vh;background:linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70)),url('./warehouse.jpg');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:30px}
-header .logo-big{width:260px;background:white;padding:18px;border-radius:20px;margin-bottom:25px}
+header{min-height:88vh;background:linear-gradient(135deg,#111,#3a0d0d,#111);display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:30px}
+.logo-big{width:260px;background:white;padding:18px;border-radius:20px;margin-bottom:25px}
 header h1{font-size:58px;margin-bottom:10px}
 header p{font-size:22px}
 .btn{display:inline-block;margin-top:28px;padding:15px 30px;background:#8b0000;color:white;text-decoration:none;border-radius:40px;font-weight:bold}
-.section{max-width:1300px;margin:auto;padding:75px 20px}
+.section{max-width:1250px;margin:auto;padding:75px 20px}
 h2{text-align:center;font-size:38px;color:#8b0000;margin-bottom:40px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
 .card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 6px 22px rgba(0,0,0,.12)}
-.card img{width:100%;height:230px;object-fit:cover;background:#ddd}
+.product-head{height:150px;background:linear-gradient(135deg,#5a0d0d,#8b0000);color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font-size:26px;font-weight:bold}
 .card-content{padding:25px}
 .card-content h3{color:#8b0000;margin-bottom:10px}
 .badge{display:inline-block;margin-top:12px;background:#8b0000;color:white;padding:7px 14px;border-radius:20px;font-size:13px}
@@ -30,7 +30,7 @@ h2{text-align:center;font-size:38px;color:#8b0000;margin-bottom:40px}
 .whatsapp{display:inline-block;margin-top:22px;padding:15px 30px;background:#25D366;color:white;text-decoration:none;border-radius:40px;font-weight:bold}
 footer{background:black;color:#aaa;text-align:center;padding:25px;font-size:14px}
 .legal{font-size:14px;color:#444}
-@media(max-width:750px){header h1{font-size:38px}nav{flex-direction:column}nav a{display:inline-block;margin-top:10px}header .logo-big{width:210px}}
+@media(max-width:750px){header h1{font-size:38px}nav{flex-direction:column}nav a{display:inline-block;margin-top:10px}.logo-big{width:210px}}
 </style>
 </head>
 
@@ -71,109 +71,33 @@ footer{background:black;color:#aaa;text-align:center;padding:25px;font-size:14px
 
 <div class="grid">
 
-<div class="card">
-<img src="./beef.jpg" alt="Beef Head Meat">
-<div class="card-content">
-<h3>Rinderkopffleisch | Beef Head Meat</h3>
-<p>60/40, 70/30 mit Drüsen, 80/20 und 95/05.</p>
-<p>Available in different specifications upon request.</p>
-<span class="badge">Food Grade</span>
-</div>
-</div>
+<div class="card"><div class="product-head">Beef Head Meat</div><div class="card-content"><h3>Rinderkopffleisch</h3><p>60/40, 70/30 mit Drüsen, 80/20 und 95/05.</p><p>Available in different specifications upon request.</p><span class="badge">Food Grade</span></div></div>
 
-<div class="card">
-<img src="./trimmings.jpg" alt="Beef Trimmings">
-<div class="card-content">
-<h3>Rinderabschnitte | Beef Trimmings</h3>
-<p>Rinderabschnitte, Rinderfett und Fettblöcke.</p>
-<p>Beef trimmings, beef fat and fat blocks.</p>
-<span class="badge">Beef</span>
-</div>
-</div>
+<div class="card"><div class="product-head">Beef Trimmings</div><div class="card-content"><h3>Rinderabschnitte</h3><p>Rinderabschnitte, Rinderfett und Fettblöcke.</p><p>Beef trimmings, beef fat and fat blocks.</p><span class="badge">Beef</span></div></div>
 
-<div class="card">
-<img src="./veal.jpg" alt="Veal Flaps">
-<div class="card-content">
-<h3>Kalbslappen | Veal Flaps</h3>
-<p>Kalbsabschnitte, Kalbslappen und Kalbsfett.</p>
-<p>Veal trimmings, veal flaps and veal fat.</p>
-<span class="badge">Veal</span>
-</div>
-</div>
+<div class="card"><div class="product-head">Veal Flaps</div><div class="card-content"><h3>Kalbslappen</h3><p>Kalbsabschnitte, Kalbslappen und Kalbsfett.</p><p>Veal trimmings, veal flaps and veal fat.</p><span class="badge">Veal</span></div></div>
 
-<div class="card">
-<img src="./poultry.jpg" alt="Poultry">
-<div class="card-content">
-<h3>Geflügel | Poultry</h3>
-<p>Hähnchenschenkel, Hähnchenabschnitte und weitere Geflügelprodukte.</p>
-<p>Chicken legs, chicken trimmings and further poultry products.</p>
-<span class="badge">Poultry</span>
-</div>
-</div>
+<div class="card"><div class="product-head">Chicken Products</div><div class="card-content"><h3>Geflügel</h3><p>Hähnchenschenkel, Hähnchenabschnitte und weitere Geflügelprodukte.</p><p>Chicken legs, chicken trimmings and further poultry products.</p><span class="badge">Poultry</span></div></div>
 
-<div class="card">
-<img src="./turkey.jpg" alt="Turkey">
-<div class="card-content">
-<h3>Pute | Turkey</h3>
-<p>Putenoberkeule, Putenflügel, Putenabschnitte und Putenhaut.</p>
-<p>Turkey upper thigh, turkey wings, turkey trimmings and turkey skin.</p>
-<span class="badge">Turkey</span>
-</div>
-</div>
+<div class="card"><div class="product-head">Turkey Products</div><div class="card-content"><h3>Pute</h3><p>Putenoberkeule, Putenflügel, Putenabschnitte und Putenhaut.</p><p>Turkey upper thigh, turkey wings, turkey trimmings and turkey skin.</p><span class="badge">Turkey</span></div></div>
 
-<div class="card">
-<img src="./mdm.jpg" alt="Turkey MDM">
-<div class="card-content">
-<h3>Truthahn MDM | Turkey MDM</h3>
-<p>Gefrorenes Truthahn-MDM in nackten Blöcken.</p>
-<p>Frozen turkey MDM in naked blocks.</p>
-<span class="badge">Frozen Blocks</span>
-</div>
-</div>
+<div class="card"><div class="product-head">Frozen MDM Blocks</div><div class="card-content"><h3>Truthahn MDM</h3><p>Gefrorenes Truthahn-MDM in nackten Blöcken.</p><p>Frozen turkey MDM in naked blocks.</p><span class="badge">Frozen Blocks</span></div></div>
 
 </div>
 </section>
 
 <section class="section" id="petfood">
 <h2>Tiernahrung | Pet Food Ingredients</h2>
-
 <div class="box">
 <p>Zusätzlich bieten wir Rohstoffe und Nebenprodukte für die Tiernahrungsindustrie an.</p>
 <br>
 <p>We also offer raw materials and by-products for the pet food industry.</p>
 </div>
-
 <br><br>
-
 <div class="grid">
-
-<div class="card">
-<img src="./petfood.jpg" alt="Pet Food Raw Materials">
-<div class="card-content">
-<h3>Pet Food Rohstoffe</h3>
-<p>Rohstoffe für die Herstellung von Tiernahrung.</p>
-<p>Raw materials for pet food production.</p>
-</div>
-</div>
-
-<div class="card">
-<img src="./cat3.jpg" alt="CAT3 Products">
-<div class="card-content">
-<h3>CAT3 Produkte</h3>
-<p>Produkte für industrielle Verwertung und Tiernahrung.</p>
-<p>Products for industrial use and pet food applications.</p>
-</div>
-</div>
-
-<div class="card">
-<img src="./byproducts.jpg" alt="By-Products">
-<div class="card-content">
-<h3>By-Products</h3>
-<p>Nebenprodukte aus Rind, Kalb, Pute und Geflügel.</p>
-<p>By-products from beef, veal, turkey and poultry.</p>
-</div>
-</div>
-
+<div class="card"><div class="product-head">Pet Food Raw Materials</div><div class="card-content"><h3>Pet Food Rohstoffe</h3><p>Rohstoffe für die Herstellung von Tiernahrung.</p><p>Raw materials for pet food production.</p></div></div>
+<div class="card"><div class="product-head">CAT3 Products</div><div class="card-content"><h3>CAT3 Produkte</h3><p>Produkte für industrielle Verwertung und Tiernahrung.</p><p>Products for industrial use and pet food applications.</p></div></div>
+<div class="card"><div class="product-head">By-Products</div><div class="card-content"><h3>By-Products</h3><p>Nebenprodukte aus Rind, Kalb, Pute und Geflügel.</p><p>By-products from beef, veal, turkey and poultry.</p></div></div>
 </div>
 </section>
 
